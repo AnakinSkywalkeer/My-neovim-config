@@ -217,15 +217,16 @@ Plug 'bmatcuk/stylelint-lsp'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
+
+Plug 'akinsho/toggleterm.nvim', {'tag' : '2.7.0'}
 " Convenient floating terminal window
 "Plug 'voldikss/vim-floaterm'
-
 Plug 'ray-x/lsp_signature.nvim'
-
 call plug#end()
 " colorscheme molokai
 " colorscheme gruvbox
-colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+colorscheme catppuccin-frappe " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
 " Leader bind to space
 let mapleader = ","
 
@@ -522,7 +523,8 @@ nnoremap ,g <cmd>Telescope live_grep<cr>
 nnoremap H gT
 nnoremap L gt
 
- 
+
+
 
 " Telescope fzf plugin
 lua << EOF
